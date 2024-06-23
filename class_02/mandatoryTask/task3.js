@@ -19,9 +19,9 @@ function divide(a, b) {
 
 // Example usage
 let resultAdd = add(10, 5); // 15
-let resultSubtract = subtract(10, 5); // 5
-let resultMultiply = multiply(10, 5); // 50
-let resultDivide = divide(10, 5); // 2
+let resultSubtract = subtract(10, 4); // 6
+let resultMultiply = multiply(3, 7); // 21
+let resultDivide = divide(20, 5); // 4
 let resultDivideByZero = divide(10, 0); // "Error! Division by zero."
 
 console.log(resultAdd);
