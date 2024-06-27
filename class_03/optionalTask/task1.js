@@ -32,39 +32,37 @@ animal1.eat(); // Output: Lion is eating.
 dog1.eat(); // Output: Buddy is eating.
 dog1.bark(); // Output: Buddy is barking.
 
-
+// using ES6
 // Base class
 class Vehicle {
-    constructor(make, model) {
-      this.make = make;
-      this.model = model;
-    }
-  
-    // Method
-    start() {
-      console.log(`${this.make} ${this.model} is starting.`);
-    }
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
   }
-  
-  // Derived class
-  class Car extends Vehicle {
-    constructor(make, model, doors) {
-      super(make, model); // Call the parent constructor
-      this.doors = doors;
-    }
-  
-    // Method
-    honk() {
-      console.log(`${this.make} ${this.model} is honking.`);
-    }
+
+  // Method
+  start() {
+    console.log(`${this.make} ${this.model} is starting.`);
   }
-  
-  // Creating instances of Vehicle and Car
-  const vehicle1 = new Vehicle('Generic', 'Vehicle');
-  const car1 = new Car('Toyota', 'Corolla', 4);
-  
-  vehicle1.start(); // Output: Generic Vehicle is starting.
-  car1.start(); // Output: Toyota Corolla is starting.
-  car1.honk(); // Output: Toyota Corolla is honking.
-  
-  
+}
+
+// Derived class
+class Car extends Vehicle {
+  constructor(make, model, doors) {
+    super(make, model); // Call the parent constructor
+    this.doors = doors;
+  }
+
+  // Method
+  honk() {
+    console.log(`${this.make} ${this.model} is honking.`);
+  }
+}
+
+// Creating instances of Vehicle and Car
+const vehicle1 = new Vehicle("Generic", "Vehicle");
+const car1 = new Car("Toyota", "Corolla", 4);
+
+vehicle1.start(); // Output: Generic Vehicle is starting.
+car1.start(); // Output: Toyota Corolla is starting.
+car1.honk(); // Output: Toyota Corolla is honking.
