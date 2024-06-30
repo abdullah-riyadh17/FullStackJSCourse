@@ -53,7 +53,7 @@ class Car extends Vehicle {
     this.doors = doors;
   }
 
-  // Method
+  // Method honk
   honk() {
     console.log(`${this.make} ${this.model} is honking.`);
   }
